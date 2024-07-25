@@ -1,0 +1,10 @@
+delay.tcl 
+read_liberty ../synth/Nangate45_typ.lib
+read_verilog ../synth/synth.v
+link_design pattern_detection
+create_clock -name clk_i -period 10
+report_checks
+exit
+report_timing
+report_path 
+exit
